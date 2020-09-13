@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { exec } = require("child_process");
-const owner = ["560484031838552064", "662207542486630401";
+const owner = ["560484031838552064", "662207542486630401"];
 
 module.exports.run = async (client, message, args) => {try {
 if (!owner.includes(message.author.id)) return;
