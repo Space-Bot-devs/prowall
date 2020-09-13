@@ -1,0 +1,15 @@
+[
+  {"name": "ping", "description":"Simple ping command returns you the latency of the bot!", "usage":"pro.ping"},
+  {"name": "help", "description":"Simple ping command returns you the latency of the bot!", "usage":"pro.ping"},
+  {"name": "kick", "description":"Will Kick user by mention", "usage":"kick @user"},
+  {"name": "ban", "description": "Will ban a user by mention", "usage": "ban @user"},
+  {"name": "unban", "description": "Will unban a user by mention", "usage": "unban <userID>"},
+  {"name": "credits", "description":"Give the list of Contributors and Developers", "usage":"credits"},
+  {"name": "snipe", "description":"Snipes Deleted Messages!", "usage":"snipe"},
+  {"name":"editsnipe", "description":"Snipes Edited Messages!", "usage":"editsnipe"},
+  {"name":"reload", "description":"Private Command", "usage":"reload"},
+  {"name":"exec", "description":"Private Command", "usage":"exec"},
+  {"name":"eval", "description":"Private Command", "usage":"eval"},
+  {"name":"prefix", "description":"Changes prefix of the server!", "usage":"prefix <prefix>"},
+  {"name":"logs", "description":"Set logs channel for your server!", "usage":"logs <#channel>"}
+]
