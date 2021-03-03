@@ -1,9 +1,5 @@
-# prowall
-Source code of my old bot. 
+# SpaceBot
+This is the old source code of [Shade's](https://github.com/shadeoxide) old bot [Prowall](https://github.com/shadeoxide/prowall)!
 
-Prowall doesn't exist now, it is deleted.
-You can use this code for your bot.
+## Coming Soon
 
-Website Code Credits:[@Scientific-Guy](https://github.com/Scientific-Guy)
-
-Thank you for visiting my repository.
