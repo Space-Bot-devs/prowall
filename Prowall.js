@@ -4,7 +4,7 @@ const Discord = require('discord.js')
 
 client.on('ready', () => {
     console.log(`Online | Logged in as ${client.user.tag}, ${client.guilds.cache.size} servers`)
-          client.user.setPresence({activity: {name: 'for Rule Breakers', type: "WATCHING"}, status: 'dnd'})  
+          client.user.setPresence({activity: {name: 'To ${client.guilds.cache.size} servers', type: "LISTENING"}, status: 'online'})  
 })
 
 client.on("messageUpdate", async (oldMessage, newMessage) => {
@@ -18,7 +18,7 @@ client.on("messageUpdate", async (oldMessage, newMessage) => {
   .setColor("BLURPLE")
   .addField('Old Message', oldMessage)
   .addField('New Message', newMessage)
-  .setFooter('Prowall | Logging')
+  .setFooter('SpaceBot | Logging')
   .setTimestamp();
   channel.send(em);
 })
@@ -32,7 +32,7 @@ client.on("messageDelete", async (message) => {
   .setDescription(`Message sent by <@${message.author.id}> deleted in <#${message.channel.id}>`)
   .setColor("BLURPLE")
   .addField('Message', message)
-  .setFooter('Prowall | Logging')
+  .setFooter('SpaceBot | Logging')
   .setTimestamp();
   channel.send(em);
 })
@@ -66,7 +66,7 @@ if (message.author.bot || message.channel.type === "dm") return;
   let prefix = client.db.get(`prefix_${message.guild.id}`) || "pro!";
   //done <??..
   // try this
-  const ping = `<@746311179986534475>` || `<@!746311179986534475>`;
+  const ping = `<@680506811031355413>` || `<@!680506811031355413>`;
  if (message.content === ping) return message.channel.send(`My prefix in the server is \`${prefix}`);
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
