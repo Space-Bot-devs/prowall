@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 6969;
+const port = 8080;
 const http = require('http')
 const Discord = require('discord.js')
 // Use Prototype.
@@ -17,7 +17,7 @@ const bot = new Bot();
 // Website Zone
 const bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 bot.on('ready', () => {
@@ -28,15 +28,15 @@ bot.login(process.env.TOKEN)
 
 // Returns Homepage
 app.get('/', (req, res) => {
-  console.log('Prowall Ping Recived:' + Date.now())
+  console.log('SpaceBot Ping Recived:' + Date.now())
   // man let the client be here
-  res.render('index.ejs', {servers: bot.guilds.cache.size, users: bot.users.cache.size, channels: bot.channels.cache.size, client: client})
+  res.render('index.ejs', { servers: bot.guilds.cache.size, users: bot.users.cache.size, channels: bot.channels.cache.size, client: client })
 });
 
-app.listen(port, () => console.log(`App listening at https://prowall.repl.co`));
+app.listen(port, () => console.log(`App listening at https://spacebot.jonfirexbox.repl.co`));
 
 setInterval(() => {
-  http.get(`http://prowall.repl.co`);
+  http.get(`https://spacebot.jonfirexbox.repl.co`);
 }, 280000);
 
 // Website Zone
