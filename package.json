@@ -1,0 +1,29 @@
+{
+  "name": "SpaceBot",
+  "version": "1.0.0",
+  "description": "Source code of my old bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Space-Bot-Devs/SpaceBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Space-Bot-Devs/SpaceBot/issues"
+  },
+  "homepage": "https://github.com/Space-Bot-Devs/SpaceBot#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "discord-slash-commands": "^1.2.4",
+    "discord.js": "^12.5.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "quick.db": "^7.1.3"
+  }
+}
